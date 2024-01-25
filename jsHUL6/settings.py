@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'scroll',
     'singlepage',
     'django.contrib.admin',
     'django.contrib.auth',

@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('scroll/', include('scroll.urls')),
     path('', include('singlepage.urls')),
 ]
