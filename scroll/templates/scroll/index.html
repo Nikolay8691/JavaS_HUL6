@@ -30,6 +30,10 @@
 		function load() {
 			const start = counter;
 			const end = start + quantity-1;
+
+			// console.log('start = ' + start);
+			// console.log('end = ' + end);
+
 			counter = end + 1;
 
 			fetch(`/scroll/posts?start=${start}&end=${end}`)

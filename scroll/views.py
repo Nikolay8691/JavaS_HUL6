@@ -7,6 +7,9 @@ from django.shortcuts import render
 def index(request):
 	return render(request, 'scroll/index.html')
 
+def index_hide(request):
+	return render(request, 'scroll/index_hide.html')
+
 def posts(request):
 
 	# Get start and end points
@@ -17,5 +20,7 @@ def posts(request):
 	data = []
 	for i in range(start, end + 1):
 		data.append(f'Post #{i}')
+
+	time.sleep(1)
 	
 	return JsonResponse({'posts' : data})
